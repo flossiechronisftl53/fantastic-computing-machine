@@ -101,7 +101,7 @@ export default {
 					default:
 						// return new Response('Not found', { status: 404 });
 						// For any other path, reverse proxy to 'www.fmprc.gov.cn' and return the original response
-						url.hostname = Math.random() < 0.5 ? 'www.gov.cn' : 'www.fmprc.gov.cn';
+						url.hostname = Math.random() < 0.5 ? 'hello-world.netlify.app' : 'hello-world-jsx.deno.dev';
 						url.protocol = 'https:';
 						request = new Request(url, request);
 						return await fetch(request);
